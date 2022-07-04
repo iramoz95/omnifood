@@ -1,35 +1,48 @@
+/* Multiple selectrors */
+h1,
+h1,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 h1 {
   color: blue;
-  font-family: sans-serif;
   font-size: 26px;
   font-style: italic;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: sans-serif;
   font-size: 40px;
 }
 
 h3 {
-  font-family: sans-serif;
   font-size: 30px;
 }
 
 h4 {
-  font-family: sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
-  font-family: sans-serif;
   font-size: 22px;
   line-height: 1.5;
 }
 
 li {
   font-size: 20px;
-  font-family: sans-serif;
+}
+
+/* Descendent selector */
+footer p {
+  font-size: 15px;
+}
+
+article header p {
+  font-style: italic;
 }
