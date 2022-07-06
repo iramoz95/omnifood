@@ -105,9 +105,15 @@ a:active {
   font-size: 20px;
 }
 
-.post-image {
+.screenshot {
   width: 100%;
   height: auto;
+}
+
+.main-container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
