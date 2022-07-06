@@ -53,6 +53,7 @@ li {
   font-style: italic;
 } */
 
+/* Id selector */
 #author {
   font-size: 18px;
   font-style: italic;
@@ -62,6 +63,7 @@ li {
   font-size: 16px;
 }
 
+/* Class selector */
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -101,6 +103,28 @@ li:last-child {
   color: red;
 } */
 
-article p:last-child {
+/* Misconception: this won't work */
+article p:first-child {
   color: red;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
 }
