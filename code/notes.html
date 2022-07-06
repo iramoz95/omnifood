@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes</title>
+    <link href="./css/notes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>✒️ Notes</h1>
+      <nav>
+        <a href="./index.html">Back to home</a>
+      </nav>
+    </header>
+    <article>
+      <section>
+        <header>
+          <h2>Conflicts Between Selectors</h2>
+        </header>
+        <p>
+          There are <strong>multiple selectors</strong> selecting the same
+          element.<strong> Which one of them applies? </strong> All of them.
+          <strong> All properties and rules are applied! </strong>
+        </p>
+        <p>
+          But there are <strong>conflicting</strong> font-size declarations! Is
+          it 18px, or 20px, or 22px?
+        </p>
+        <pre>
+        <code>
+          &lt;p id="author" class="author&gt;
+          Posted by Ian Ramos on Wednesday, July 6th 2022
+          &lt;/p&gt;
+        </code>
+      </pre>
+        <p id="author-text" class="author">
+          Posted by Ian Ramos on Wednesday, July 6th 2022 (20px)
+        </p>
+        <img
+          src="./images/notes/conflicts1.png"
+          alt="conflicts-between-selectors"
+          height="500"
+        />
+      </section>
+    </article>
+  </body>
+</html>

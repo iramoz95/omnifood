@@ -1,0 +1,62 @@
+.main-header {
+  background-color: #f7f7f7;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 22px;
+}
+
+code {
+  font-size: 16px;
+  font-style: italic;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#author-text {
+  font-size: 20px;
+}
