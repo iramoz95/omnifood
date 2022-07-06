@@ -104,3 +104,8 @@ a:active {
 #author-text {
   font-size: 20px;
 }
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
