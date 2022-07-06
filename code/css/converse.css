@@ -1,6 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 33%;
+  height: auto;
 }
 
 .more-info,
@@ -13,13 +29,10 @@ body {
   text-decoration: none;
 }
 
-.product {
-  border: 4px solid black;
-}
-
 .title {
   background-color: #f7f7f7;
   font-size: 25px;
+  padding: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -35,23 +48,36 @@ body {
 }
 
 .details {
+  margin: 20px 0;
   text-transform: uppercase;
 }
 
 .details-list {
   list-style: square;
+  margin-left: 25px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
 }
 
 .button {
   background-color: black;
   border: none;
   color: white;
-  font-size: 22px;
   cursor: pointer;
+  font-size: 22px;
+  padding: 10px 0;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .button:hover {
   background-color: white;
+  border-top: 4px solid black;
   color: black;
 }
