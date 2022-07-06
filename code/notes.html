@@ -39,8 +39,62 @@
         <img
           src="./images/notes/conflicts1.png"
           alt="conflicts-between-selectors"
-          height="500"
+          height="550"
         />
+      </section>
+      <section>
+        <header>
+          <h2>Inheritance and the universal selector</h2>
+        </header>
+        <h3>Inheritance</h3>
+        <p>
+          In CSS,<strong>inheritance</strong> controls what happens when no
+          value is specified for a property on an element.
+        </p>
+        <p>CSS properties can be cathegorized in two types:</p>
+        <ul>
+          <li>
+            <strong>inherited properties</strong>, which by default are set to
+            the computed value of a parent element
+          </li>
+          <li>
+            <strong>non-inherited properties</strong>, which by default are set
+            to initial value of the property
+          </li>
+        </ul>
+        <p>
+          For example, the links will inherit font-size from nav in the
+          following snippet
+        </p>
+        <pre>
+          <code>
+            nav {
+              font-size: 18px;
+            }
+          </code>
+        </pre>
+        <img
+          src="./images/notes/inheritance1.png"
+          alt="How inheritance works"
+          height="550"
+        />
+      </section>
+      <section>
+        <header>
+          <h2>Universal selector</h2>
+        </header>
+        <p>
+          The CSS <strong>universal selector (*)</strong> matches elements of
+          any type
+        </p>
+        <pre>
+          <code>
+            /* Selects all elements */
+            * {
+              color: green;
+            }
+          </code>
+        </pre>
       </section>
     </article>
   </body>
