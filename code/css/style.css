@@ -81,6 +81,7 @@ ul {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; Block to inline */
 }
 
 li:last-child {
@@ -186,4 +187,20 @@ footer p {
 .post-image {
   width: 100%;
   height: auto;
+  /* margin: 100px; Inline block element behaviour*/
+}
+
+/* Inline to block elements */
+nav a:link {
+  /* background-color: cyan;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
