@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -206,6 +206,7 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
+/*Absolute positioning*/
 button {
   font-size: 22px;
   padding: 20px;
@@ -213,4 +214,32 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/*Pseudo elements*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/*Adjacent sibling combinator*/
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe708;
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }

@@ -19,7 +19,9 @@ article {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   color: #1098ad;
 }
 
@@ -38,6 +40,12 @@ h2 {
 
 h3 {
   font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 23px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -111,7 +119,7 @@ a:active {
 }
 
 .main-container {
-  width: 700px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -123,4 +131,13 @@ a:active {
   text-align: center;
   background-color: #f7f7f7;
   border: 2px solid #444;
+}
+
+.first-line p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+h5 + p::first-line {
+  color: red;
 }

@@ -234,6 +234,72 @@
             alt="Normal flow vs Absolute positioning"
           />
         </section>
+        <section>
+          <header>
+            <h2>Pseudo Elements</h2>
+          </header>
+          <p>
+            A CSS <strong>pseudo-elements</strong> is a keyword added to a
+            selector that lets you style a specific part of the selected
+            element(s). For example <em>::first-line</em> can be used to change
+            the font of the first line of a paragraph
+          </p>
+          <h4>Syntax</h4>
+          <p>
+            You can use only one pseudo-element in a selector. It must appear
+            after the simple selectors in the statement.
+          </p>
+          <pre>
+            <code>
+              selector::pseudo-element {
+                property: value;
+              }
+            </code>
+          </pre>
+          <pre>
+            <code>
+              p::first-line{
+                color: blue;
+                text-transform: upeprcase
+              }
+            </code>
+          </pre>
+
+          <div class="first-line">
+            <p>
+              What would you think if I sang out of tune? Would you stand up and
+              walk out on me? Lend me your ears and I'll sing you a song And
+              I'll try not to sing out of key.
+            </p>
+          </div>
+          <h3>Adjacent sibling combinator</h3>
+          <p>
+            The <strong>adjacent sibling combinator</strong> (+) separates two
+            selectors and matches the second element only if it
+            <em>immediately</em> follows the first element, and both are
+            children of the same parent element.
+          </p>
+          <h4>Syntax</h4>
+          <pre>
+            <code>
+              former_element + target_element {
+                 style properties 
+              }
+            </code>
+          </pre>
+          <pre>
+            <code>
+              h5 + p::first-line {
+                color: red;
+              }
+            </code>
+          </pre>
+          <h5>h5</h5>
+          <p>
+            One, two, three, four Yes, I'm lonely, wanna die Yes, I'm lonely,
+            wanna die If I ain't dead already Girl, you know the reason why.
+          </p>
+        </section>
       </article>
     </div>
   </body>
