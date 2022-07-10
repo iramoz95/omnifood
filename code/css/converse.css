@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.product-image {
+  width: 33%;
+  height: auto;
+}
+
+.more-info,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.title {
+  background-color: #f7f7f7;
+  font-size: 25px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.ship {
+  color: #888;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.details {
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 25px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: white;
+  border-top: 4px solid black;
+  color: black;
+}
+
+/*Pseudo elemet*/
+.product::after {
+  content: "SALE";
+  color: white;
+  background-color: #ff3100;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: -18px;
+  left: -40px;
+  display: inline-block;
+}
+
+.colors {
+  margin: 20px 0;
+}
+
+.color {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.black {
+  background-color: #000;
+}
+
+.blue {
+  background-color: #00f;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.yellow {
+  background-color: #fbff00;
+}
+
+.green {
+  background-color: #0f0;
+}
+
+.brown {
+  background-color: #a52a2a;
+}

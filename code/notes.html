@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes</title>
+    <link href="./css/notes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="main-header">
+        <h1>✒️ Notes</h1>
+        <nav>
+          <a href="./index.html">Back to home</a>
+        </nav>
+      </header>
+      <article>
+        <section>
+          <header>
+            <h2>Conflicts Between Selectors</h2>
+          </header>
+          <p>
+            There are <strong>multiple selectors</strong> selecting the same
+            element.<strong> Which one of them applies? </strong> All of them.
+            <strong> All properties and rules are applied! </strong>
+          </p>
+          <p>
+            But there are <strong>conflicting</strong> font-size declarations!
+            Is it 18px, or 20px, or 22px?
+          </p>
+          <pre>
+          <code>
+            &lt;p id="author" class="author&gt;
+            Posted by Ian Ramos on Wednesday, July 6th 2022
+            &lt;/p&gt;
+          </code>
+        </pre>
+          <p id="author-text" class="author">
+            Posted by Ian Ramos on Wednesday, July 6th 2022 (20px)
+          </p>
+          <img
+            class="screenshot"
+            src="./images/notes/conflicts1.png"
+            alt="conflicts-between-selectors"
+          />
+        </section>
+        <section>
+          <header>
+            <h2>Inheritance and the universal selector</h2>
+          </header>
+          <h3>Inheritance</h3>
+          <p>
+            In CSS,<strong>inheritance</strong> controls what happens when no
+            value is specified for a property on an element.
+          </p>
+          <p>CSS properties can be cathegorized in two types:</p>
+          <ul>
+            <li>
+              <strong>inherited properties</strong>, which by default are set to
+              the computed value of a parent element
+            </li>
+            <li>
+              <strong>non-inherited properties</strong>, which by default are
+              set to initial value of the property
+            </li>
+          </ul>
+          <p>
+            For example, the links will inherit font-size from nav in the
+            following snippet
+          </p>
+          <pre>
+          <code>
+            nav {
+              font-size: 18px;
+            }
+          </code>
+        </pre>
+          <img
+            class="screenshot"
+            src="./images/notes/inheritance1.png"
+            alt="How inheritance works"
+          />
+          <header>
+            <h3>Universal selector</h3>
+          </header>
+          <p>
+            The CSS <strong>universal selector (*)</strong> matches elements of
+            any type
+          </p>
+          <pre>
+          <code>            
+            * {
+              color: green;
+              margin: 0;
+              padding:0
+            }
+          </code>
+        </pre>
+        </section>
+        <section>
+          <header>
+            <h2>The CSS box model</h2>
+          </header>
+          <p>
+            When laying out a document, the browser's rendering engine
+            represents each element as a rectangular box according to the
+            standard
+            <strong>CSS basic box model</strong>. CSS determines the size,
+            position, and properties (color, background, border, size, etc.) of
+            these boxes.
+          </p>
+          <p>
+            Every box is composed of four parts (or areas), defined by their
+            respective edges:
+          </p>
+          <ol>
+            <li>Content edge</li>
+            <li>Padding edge</li>
+            <li>Border edge</li>
+            <li>Margin edge</li>
+          </ol>
+          <img
+            class="screenshot"
+            src="./images/notes/boxmodel1.png"
+            alt="The CSS box model"
+          />
+          <img
+            class="screenshot"
+            src="./images/notes/boxmodel2.png"
+            alt="The CSS box model"
+          />
+          <h3>Adding Dimensions</h3>
+          <p>Height</p>
+          <pre>
+            <code>
+              .post-image {
+                width: 100%;
+                height: auto;
+              }            
+            </code>
+          </pre>
+          <img class="screenshot" src="./images/post-img.jpg" />
+          <h3>Centering elements</h3>
+          <p>
+            A method to center one element is using a class container assigned
+            to a div comonent as follows
+          </p>
+          <pre>
+           <code>
+              &lt;div class="container"&gt;
+              &lt;p&gt;Sample image&lt;/p&gt;
+              &lt;img src="./images/laura-jones.jpg" alt="laura jones" /&gt;
+              &lt;/div&gt;
+              
+              .container {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                background-color: #f7f7f7;
+                border: 2px solid #444;
+              }
+            </code>
+          </pre>
+          <div class="container">
+            <p>Sample image</p>
+            <img src="./images/laura-jones.jpg" alt="laura jones" />
+          </div>
+        </section>
+        <section>
+          <header>
+            <h2>Types of boxes</h2>
+          </header>
+          <p>
+            In CSS we broadly have two types of of boxes. The type refers to how
+            the box behaves in terms of page flow and in relation to other boxes
+            on the page.
+          </p>
+          <h3>Block level elements</h3>
+          <img
+            class="screenshot"
+            src="./images/notes/boxes1.png"
+            alt="The CSS box model"
+          />
+          <h3>Inline elements</h3>
+          <img
+            class="screenshot"
+            src="./images/notes/inline1.png"
+            alt="The CSS box model"
+          />
+          <h3>Inline-Block boxes</h3>
+          <img
+            class="screenshot"
+            src="./images/notes/inline-block.png"
+            alt="The CSS box model"
+          />
+        </section>
+        <section>
+          <header>
+            <h2>Absolute positioning</h2>
+          </header>
+          <p>
+            The <strong>position</strong> CSS property sets how an element is
+            positioned in a document. The <em>top</em>,<em>right</em>,
+            <em>bottom</em>, and <em>left</em> properties determine the final
+            location of positioned elements
+          </p>
+          <ul>
+            <li>
+              <strong>Relative:</strong>
+              <p>
+                The element is positioned according to the normal flow of the
+                document, and then offset relative to itself.
+              </p>
+            </li>
+            <li>
+              <strong>Absolute:</strong>
+              <p>
+                The element is removed from the normal document flow, and no
+                space is created for the element in the page layout. It is
+                positioned relative to its closest positioned ancestor, if any;
+                otherwise, it is placed relative to the initial containing
+                block.
+              </p>
+            </li>
+          </ul>
+          <img
+            class="screenshot"
+            src="./images/notes/normalVsAbsolutePosition.png"
+            alt="Normal flow vs Absolute positioning"
+          />
+          <img
+            class="screenshot"
+            src="./images/notes/UnderstandingAbsolutePositioning.png"
+            alt="Normal flow vs Absolute positioning"
+          />
+        </section>
+        <section>
+          <header>
+            <h2>Pseudo Elements</h2>
+          </header>
+          <p>
+            A CSS <strong>pseudo-elements</strong> is a keyword added to a
+            selector that lets you style a specific part of the selected
+            element(s). For example <em>::first-line</em> can be used to change
+            the font of the first line of a paragraph
+          </p>
+          <h4>Syntax</h4>
+          <p>
+            You can use only one pseudo-element in a selector. It must appear
+            after the simple selectors in the statement.
+          </p>
+          <pre>
+            <code>
+              selector::pseudo-element {
+                property: value;
+              }
+            </code>
+          </pre>
+          <pre>
+            <code>
+              p::first-line{
+                color: blue;
+                text-transform: upeprcase
+              }
+            </code>
+          </pre>
+
+          <div class="first-line">
+            <p>
+              What would you think if I sang out of tune? Would you stand up and
+              walk out on me? Lend me your ears and I'll sing you a song And
+              I'll try not to sing out of key.
+            </p>
+          </div>
+          <h3>Adjacent sibling combinator</h3>
+          <p>
+            The <strong>adjacent sibling combinator</strong> (+) separates two
+            selectors and matches the second element only if it
+            <em>immediately</em> follows the first element, and both are
+            children of the same parent element.
+          </p>
+          <h4>Syntax</h4>
+          <pre>
+            <code>
+              former_element + target_element {
+                 style properties 
+              }
+            </code>
+          </pre>
+          <pre>
+            <code>
+              h5 + p::first-line {
+                color: red;
+              }
+            </code>
+          </pre>
+          <h5>h5</h5>
+          <p>
+            One, two, three, four Yes, I'm lonely, wanna die Yes, I'm lonely,
+            wanna die If I ain't dead already Girl, you know the reason why.
+          </p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
