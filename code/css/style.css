@@ -17,6 +17,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  background-color: red;
   height: 80px;
   padding: 20px 40px;
   margin-bottom: 60px;
@@ -197,7 +198,7 @@ nav a:link {
   margin: 20px;
   padding: 20px;
   display: block; */
-  margin-right: 15px;
+  margin-right: 10px;
   margin-top: 10px;
   display: inline-block;
 }
@@ -262,4 +263,14 @@ h1 {
 
 nav {
   float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
 }
