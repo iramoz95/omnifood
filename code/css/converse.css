@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,11 +15,6 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
-}
-
-.product-image {
-  width: 33%;
-  height: auto;
 }
 
 .more-info,
@@ -41,17 +37,20 @@ body {
 
 .price {
   font-size: 28px;
+  float: left;
 }
 
 .ship {
   color: #888;
   font-weight: bold;
   text-transform: uppercase;
+  float: right;
+  margin-top: 8px;
 }
 
 .details {
-  margin: 20px 0;
   text-transform: uppercase;
+  margin: 20px 0;
 }
 
 .details-list {
@@ -105,8 +104,8 @@ p {
 
 .color {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 10px;
 }
 
@@ -136,4 +135,29 @@ p {
 
 .brown {
   background-color: #a52a2a;
+}
+
+/* Floats challenge*/
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+  padding-top: 20px;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 40px;
+}
+
+.product-details {
+  float: left;
+  width: 243px;
 }
