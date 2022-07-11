@@ -197,7 +197,7 @@ nav a:link {
   margin: 20px;
   padding: 20px;
   display: block; */
-  margin-right: 30px;
+  margin-right: 15px;
   margin-top: 10px;
   display: inline-block;
 }
@@ -242,4 +242,24 @@ h2::after {
   position: absolute;
   top: -15px;
   right: -25px;
+}
+
+/*Floats*/
+.author-img {
+  float: left;
+}
+
+.author {
+  /* padding-left: 80px; */
+  float: left;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
 }
