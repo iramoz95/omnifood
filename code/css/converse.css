@@ -37,14 +37,14 @@ body {
 
 .price {
   font-size: 28px;
-  float: left;
+  /* float: left; */
 }
 
 .ship {
   color: #888;
   font-weight: bold;
   text-transform: uppercase;
-  float: right;
+  /* float: right; */
   margin-top: 8px;
 }
 
@@ -100,13 +100,14 @@ p {
 
 .colors {
   margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .color {
-  display: inline-block;
   width: 25px;
   height: 25px;
-  margin-right: 10px;
 }
 
 .color:last-child {
@@ -138,7 +139,7 @@ p {
 }
 
 /* Floats challenge*/
-.product-description {
+/* .product-description {
   clear: both;
   margin-bottom: 10px;
 }
@@ -160,4 +161,35 @@ p {
 .product-details {
   float: left;
   width: 243px;
+} */
+
+/*Flexbox challenge*/
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  flex: 1;
+}
+
+.product-info {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-info-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
