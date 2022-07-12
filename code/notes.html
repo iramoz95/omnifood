@@ -88,10 +88,10 @@
           </p>
           <pre>
           <code>            
-            * {
-              color: green;
+            * {              
               margin: 0;
               padding:0
+              box-sizing: border-box
             }
           </code>
         </pre>
@@ -396,6 +396,49 @@
             src="./images/notes/flexboxOverview.png"
             alt="Flexbox Overview"
           />
+          <h3>The flex property</h3>
+          <p>
+            To start with, we need to select which elements are to be laid out
+            as flexible boxes. To do this, we set a special value of display on
+            the parent element of the elements you want to affect. In this case
+            we want to lay out the &lt;article&gt; elements, so we set this on
+            the &lt;section&gt;:
+          </p>
+          <pre>
+            <code>
+              section {
+                align-items: center;
+                background-color: #ddd;
+                display: flex;
+                gap: 20px;
+                height: 200px;
+                justify-content: center;
+                margin: 10px;
+              }              
+            </code>
+          </pre>
+          <section class="flex-section">
+            <article class="flex-article">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, earum placeat ad adipisci nulla perspiciatis vitae
+              optio, vel tempore nesciunt eligendi quia suscipit eaque laborum
+              amet pariatur sapiente atque repudiandae!
+            </article>
+            <article class="flex-article stretch">
+              <strong>stretch</strong>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, earum placeat ad adipisci nulla perspiciatis vitae
+              optio, vel tempore nesciunt eligendi quia suscipit eaque laborum
+              amet pariatur sapiente atque repudiandae!
+            </article>
+            <article class="flex-article grow">
+              <strong>Grow 2</strong>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, earum placeat ad adipisci nulla perspiciatis vitae
+              optio, vel tempore nesciunt eligendi quia suscipit eaque laborum
+              amet pariatur sapiente atque repudiandae!
+            </article>
+          </section>
         </section>
       </article>
     </div>

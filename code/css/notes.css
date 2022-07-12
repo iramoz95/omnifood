@@ -141,3 +141,29 @@ a:active {
 h5 + p::first-line {
   color: red;
 }
+
+.flex-section {
+  align-items: center;
+  background-color: #ddd;
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.flex-article {
+  background-color: #1098ad;
+  color: white;
+  flex: 1;
+  margin: 0;
+  padding: 10px;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.grow {
+  flex-grow: 2;
+}
