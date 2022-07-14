@@ -50,7 +50,7 @@ body {
 
 .details {
   text-transform: uppercase;
-  margin: 20px 0;
+  margin-top: 10px;
 }
 
 .details-list {
@@ -84,7 +84,7 @@ p {
 }
 
 /*Pseudo elemet*/
-.product::after {
+.product::before {
   content: "SALE";
   color: white;
   background-color: #ff3100;
@@ -102,7 +102,7 @@ p {
   margin: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .color {
@@ -164,8 +164,8 @@ p {
 } */
 
 /*Flexbox challenge*/
-
-.row {
+/* 
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -192,4 +192,33 @@ p {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+} */
+
+/*CSS Grid challenge*/
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  grid-template-rows: 1fr 250px 1fr;
+  align-items: start;
+  column-gap: 40px;
+}
+
+.title {
+  grid-column: 1 / -1;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+}
+
+.product-info-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  grid-column: 1 / -1;
+  height: 100%;
 }
