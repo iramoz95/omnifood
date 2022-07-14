@@ -186,8 +186,8 @@ h5 + p::first-line {
   background-color: #ddd;
   column-gap: 10px;
   display: grid;
-  grid-template-columns: 580px 580px;
-  grid-template-rows: 50px 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
   justify-content: center;
   margin-bottom: 50px;
   padding: 10px;
