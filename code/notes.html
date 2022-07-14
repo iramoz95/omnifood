@@ -440,6 +440,89 @@
             </article>
           </section>
         </section>
+        <section>
+          <header>
+            <h2>CSS Grid</h2>
+          </header>
+          <p>
+            CSS Grid is a set of <strong>CSS properties</strong> for
+            <strong> building 2-dimensional layouts</strong>.
+          </p>
+          <img
+            class="screenshot"
+            src="./images/notes/whatIsCssGrid.png"
+            alt="What is CSS Grid?"
+          />
+          <p>
+            The following snippet will create a grid with 2 columns and 2 rows.
+          </p>
+          <div class="code-grid">
+            <p class="grid-header">CSS</p>
+            <p class="grid-header">HTML</p>
+            <pre>
+              <code>
+                .image-grid {
+                  align-items: center;
+                  background-color: #ddd;
+                  column-gap: 10px;
+                  display: grid;
+                  grid-template-columns: 580px 580px;
+                  grid-template-rows: 50px 400px;
+                  justify-content: center;
+                  margin-bottom: 50px;
+                  padding: 10px;
+                  row-gap: 5px;
+                }
+                
+                .image-header {
+                  color: #1098ad;
+                  font-size: 25px;
+                  font-weight: bold;
+                  margin: auto auto;
+                }
+              </code>
+            </pre>
+            <pre>
+              <code>
+                &lt;div class="image-grid"&gt;
+                  &lt;p class="image-header"&gt;Basic CSS Grid Terminology&lt;/p&gt;
+                  &lt;p class="image-header"&gt;More CSS Grid Terminology&lt;/p&gt;
+                  &lt;img
+                    class="screenshot"
+                    src="./images/notes/gridTerminology1.png"
+                    alt="CSS Grid terminology 1"
+                  /&gt;
+                  &lt;img
+                    class="screenshot"
+                    src="./images/notes/gridTerminology2.png"
+                    alt="CSS Grid terminology 2"
+                  /&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="image-grid">
+            <p class="grid-header">Basic CSS Grid Terminology</p>
+            <p class="grid-header">More CSS Grid Terminology</p>
+            <img
+              class="screenshot"
+              src="./images/notes/gridTerminology1.png"
+              alt="CSS Grid terminology 1"
+            />
+            <img
+              class="screenshot"
+              src="./images/notes/gridTerminology2.png"
+              alt="CSS Grid terminology 2"
+            />
+          </div>
+          <h3>Summary</h3>
+          <img
+            class="screenshot"
+            src="./images/notes/gridSummary.png"
+            alt="CSS Grid container and grid items"
+            style="justify-self: stretch"
+          />
+        </section>
       </article>
     </div>
   </body>
