@@ -460,9 +460,9 @@
             <p class="grid-header">CSS</p>
             <p class="grid-header">HTML</p>
             <pre>
-              <code>
-                .image-grid {
-                  align-items: center;
+                <code>
+                  .image-grid {
+                    align-items: center;
                   background-color: #ddd;
                   column-gap: 10px;
                   display: grid;
@@ -481,7 +481,12 @@
                   font-weight: bold;
                   margin: auto auto;
                 }
-              </code>
+                
+                .twoc-image {
+                  width: 100%;
+                  grid-column: 1 / span 2;
+                }
+              </code>              
             </pre>
             <pre>
               <code>
@@ -498,6 +503,12 @@
                     src="./images/notes/gridTerminology2.png"
                     alt="CSS Grid terminology 2"
                   /&gt;
+                  &lt;img
+                  class="twoc-image"
+                  src="./images/notes/gridSummary.png"
+                  alt="CSS Grid container and grid items"
+                  style="justify-self: stretch"
+                /&gt;
                 &lt;/div&gt;
               </code>
             </pre>
@@ -515,14 +526,13 @@
               src="./images/notes/gridTerminology2.png"
               alt="CSS Grid terminology 2"
             />
+            <img
+              class="twoc-image"
+              src="./images/notes/gridSummary.png"
+              alt="CSS Grid container and grid items"
+              style="justify-self: stretch"
+            />
           </div>
-          <h3>Summary</h3>
-          <img
-            class="screenshot"
-            src="./images/notes/gridSummary.png"
-            alt="CSS Grid container and grid items"
-            style="justify-self: stretch"
-          />
         </section>
       </article>
     </div>

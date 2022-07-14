@@ -170,14 +170,12 @@ h5 + p::first-line {
 }
 
 .code-grid {
-  align-items: center;
   background-color: #f7f7f7;
   column-gap: 10px;
   display: grid;
-  grid-template-columns: 400px 500px;
-  grid-template-rows: 50px 400px;
-  margin-bottom: 50px;
-  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 5fr;
+  margin-bottom: 20px;
   row-gap: 5px;
 }
 
@@ -199,4 +197,9 @@ h5 + p::first-line {
   font-size: 25px;
   font-weight: bold;
   margin: auto auto;
+}
+
+.twoc-image {
+  width: 100%;
+  grid-column: 1 / span 2;
 }
