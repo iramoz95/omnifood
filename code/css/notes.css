@@ -176,7 +176,7 @@ h5 + p::first-line {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 5fr;
   margin-bottom: 20px;
-  row-gap: 5px;
+  gap: 20px;
 }
 
 .image-grid {
